@@ -1,7 +1,7 @@
 """
 Capture Engine & Capture Terminal
 
-Screener for monitoring Solana arbitrage opportunities in real-time.
+Screener for monitoring Solana arbitrage opportunities on different DEXs in real-time.
 Features:
 - Real-time dashboard with WebSocket updates
 - Connection status monitoring
