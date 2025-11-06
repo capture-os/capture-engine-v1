@@ -1,7 +1,7 @@
 """
-Solana MVP Frontend Application
+Capture Engine & Capture Terminal
 
-Modern web interface for monitoring Solana arbitrage opportunities in real-time.
+Screener for monitoring Solana arbitrage opportunities in real-time.
 Features:
 - Real-time dashboard with WebSocket updates
 - Connection status monitoring
@@ -27,10 +27,10 @@ from flask_socketio import SocketIO, emit
 
 # Configure logging
 logging.basicConfig(level=logging.INFO)
-logger = logging.getLogger("SpreadNet")
+logger = logging.getLogger("Capture")
 
 app = Flask(__name__)
-app.config['SECRET_KEY'] = 'spreadnet_secret_2025'
+app.config['SECRET_KEY'] = 'capture_secret_2025'
 # Dev caching controls to ensure latest UI is served
 app.config['TEMPLATES_AUTO_RELOAD'] = True
 app.config['SEND_FILE_MAX_AGE_DEFAULT'] = 0
@@ -417,7 +417,7 @@ def handle_disconnect():
 
 if __name__ == '__main__':
     """
-    Solana MVP Frontend Application
+    Capture Engine & Capture Terminal
     
     Features:
     - Real-time arbitrage opportunity monitoring
@@ -436,8 +436,8 @@ if __name__ == '__main__':
     monitor.start_monitoring()
     
     try:
-        logger.info("🌐 Starting SpreadNet Platform Server...")
-        logger.info("📊 SpreadNet Dashboard available at: http://localhost:8080")
+        logger.info("🌐 Starting Capture OSS Server...")
+        logger.info("📊 Capture Terminal available at: http://localhost:8080")
         logger.info("⚡ Real-time arbitrage monitoring active")
         
         # Run Flask app with SocketIO
