@@ -1,4 +1,4 @@
-# SpreadNet (Open)
+# Capture Engine (OSS)
 
 A local, open-source arbitrage monitor for Solana with a terminal‑style UI.
 
@@ -19,7 +19,7 @@ pip install -r requirements.txt
 
 ## Run
 ```bash
-python app.py
+python capture.py
 ```
 Then open `http://localhost:8080`.
 
@@ -30,7 +30,7 @@ Then open `http://localhost:8080`.
 
 ## Project layout
 ```
-app.py              # Flask + Socket.IO server and arbitrage monitor
+capture.py              # Flask + Socket.IO server and arbitrage monitor
 templates/          # Jinja templates (dashboard + sections)
 static/             # CSS/JS assets
 requirements.txt    # Python deps
