@@ -1,6 +1,6 @@
 # Capture Engine (OSS)
 
-A local, open-source arbitrage monitor for Solana with a terminal‑style UI.
+A local, open-source arbitrage monitor for Solana.
 
 ## Features
 - Real‑time opportunity detection (simulated multi‑DEX quotes around Jupiter reference)
